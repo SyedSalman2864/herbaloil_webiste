@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    font-size: 16px;
+}
+
+/* Promo Bar */
+.promo-bar {
+    background-color: #008cba; /* Background color */
+    color: white; /* Text color */
+    text-align: center; /* Horizontally center text */
+    height: 30px; /* Set promo bar height */
+    font-size: 15px; /* Text size */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    padding: 0; /* Remove padding to match height */
+    margin: 0; /* Remove default margins */
+}
+
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    align-items: center; /* Vertically align all children */
+    justify-content: space-between; /* Space out logo, menu, and button */
+    background-color: #f8f8f8;
+    padding: 0 20px; /* Adjust padding */
+    height: 70px; /* Container height */
+}
+
+/* Logo */
+.logo {
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Vertically center the logo */
+    justify-content: center; /* Horizontally center the logo */
+    height: 100%; /* Make logo container fill the full height */
+}
+
+.logo img {
+    max-height: 55px; /* Maximum height of the logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
+
+/* Menu Styles */
+.menu {
+    display: flex;
+    gap: 20px; /* Space between links */
+    align-items: center; /* Align vertically with the logo */
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+    line-height: 30px; /* Align text vertically with the navbar */
+}
+
+.menu a:hover {
+    color: #008cba;
+}
+
+/* WhatsApp Button */
+.contact-button .whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    padding: 5px 15px; /* Adjust padding for smaller navbar */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    line-height: 20px; /* Center button text */
+}
+
+.contact-button .whatsapp-btn:hover {
+    background-color: #1DA954;
+}
+
+
+/* Footer Styles */
+.custom-footer {
+    background-color: #008cba;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    height: 320px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding: 20px 0;
+    gap: 100px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 100px;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-section button:hover {
+    background-color: #218838;
+}
+
+/* Promo Banner */
+.promo-banner {
+    background-color: #77c043;
+    color: white; /* Text color */
+    text-align: center; /* Horizontally center text */
+    height: 30px; /* Set promo bar height */
+    font-size: 15px; /* Text size */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    padding: 0; /* Remove padding to match height */
+    margin: 0; /* Remove default margins */
+}
+
+/* Footer Buttons */
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 5px;
+}
+
+.footer-buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.call-now {
+    background-color: #008cba;
+}
+
+.whatsapp {
+    background-color: #da8a13;
+}
+
+
+.banner {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Gallery Styles */
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.gallery-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.gallery-intro {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Gallery Card */
+.gallery-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Image */
+.gallery-img {
+    width: 100%;
+    height: 200px; /* Ensures uniform height for all images */
+    object-fit: cover; /* Crops image to fit while maintaining aspect ratio */
+}
+
+/* Gallery Caption */
+.gallery-caption {
+    padding: 15px;
+    text-align: center;
+}
+
+.gallery-caption h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.gallery-caption p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Gallery Description Styles */
+.gallery-description {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: left;
+    background: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-description p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.gallery-description p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

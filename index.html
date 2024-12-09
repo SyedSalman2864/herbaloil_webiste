@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Elementor Styles and Image Slider</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section --> 
+    <header class="navbar">
+        <!-- Promo Bar -->
+        <div class="promo-bar">
+            <h2 class="elementor-heading-title elementor-size-medium">
+                ENJOY UPTO 50% OFF & | CALL NOW: 6360563194
+            </h2>   
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="img/Logo.png" alt="Fresharudhi Hair Oil Logo">
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="menu">
+                <a href="index.html" class="hover-link">Home</a>
+                <a href="about.html" class="hover-link">About Us</a>
+                <a href="ourtreatments.html" class="hover-link">Our Treatments</a>
+                <a href="faqs.html" class="hover-link">FAQs</a>
+                </nav>
+            <!-- WhatsApp Contact Button -->
+            <div class="contact-button">
+                <a href="https://wa.me/916360563194" target="_blank" class="whatsapp-btn">WhatsApp Us</a>
+            </div>
+            <a href="#" class="nav-toggle hover-link">
+                <i class="fa-sharp fa-solid fa-bars"></i></a>
+        </div>
+    </header>
+
+    <!-- Image Slider Section -->
+    <section>
+        <div class="image-slider">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="img\Banner.png" alt="Banner 1">
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="img\Banner2.png" alt="Banner 2">
+            </div>
+
+
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Navuedha Ayurvedic Hair Oil Section -->
+    <section class="Navuedha-section">
+        <div class="container">
+            <div class="left-section">
+                <h2>For Your All Hair Problems<br>There Is One Simple Solution</h2>
+                <div class="stages">
+                    <div class="stage"><img src="img/11.png" alt="Stage 1"></div>
+                    <div class="stage"><img src="img/13.png" alt="Stage 2"></div>
+                    <div class="stage"><img src="img/12.png" alt="Stage 3"></div>
+                    <div class="stage"><img src="img/14.png" alt="Stage 4"></div>
+                    <div class="stage"><img src="img/15.png" alt="Stage 5"></div>
+                    <div class="stage"><img src="img/16.png" alt="Stage 6"></div>
+                </div>
+                <div class="satisfied">
+                    <h3>2k+</h3>
+                    <p>Satisfied Customers</p>
+                </div>
+            </div>
+            <div class="right-section">
+                <h1>Discover the Power of<br>Navuedha Ayurvedic Hair Oil</h1>
+                <p>Our 100% Natural Formula using to combat all Hair problems, such as fungal infections, Hair fall, Dandruff, Weak and Damage Hair, Premature Greying, And Baldness, With visible Results in just 15 days</p>
+                <ul>
+                    <li>Hair Nourishment</li>
+                    <li>Hair Strengthening</li>
+                    <li>Preventing Hair Loss</li>
+                    <li>Thickening Hair</li>
+                </ul>
+                <!-- New Banner Section -->
+                <div class="banner-section">
+                    <img src="img\Banner4.png" alt="Special Offer Banner">
+                </div>
+                <!-- Text Below the Banner -->
+                <p>Experience the transformative power of Navuedha Herbal Oil, crafted to nourish, strengthen, and prevent hair loss while promoting thicker, healthier hair naturally. Embrace visible results with a 100% natural formula trusted for holistic hair care.</p>
+            </div>
+            <!-- Small Slider Section -->
+    </section>
+    <div class="small-slider-container">
+        <h2>Why Navuedha Hair Oil</h2>
+        <div class="small-slider">
+            <!-- Slide 1 -->
+            <div class="small-slide">
+                <img src="img/Slide2-1.png" alt="Image 1">
+                <img src="img/Slide2-2.png" alt="Image 2">
+                <img src="img/slide3-3.png" alt="Image 3">
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="small-slide">
+                <img src="img\slide4-4.png" alt="Image 4">
+                <img src="img\slide5-5.png" alt="Image 5">
+                <img src="img\slide6-6.png" alt="Image 6">
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="small-prev" onclick="prevSmallSlide()">&#10094;</button>
+        <button class="small-next" onclick="nextSmallSlide()">&#10095;</button>
+    </div>
+    
+    <!-- Banner Section -->
+    <div class="banner">
+        <img src="img\Banner5.png" alt="Banner Image" class="banner-img">
+        <div class="banner-content">
+            <h1>ENQUIRE NOW AND EXPERIENCE <br>THE BEST RESULTS</h1>
+            <button class="banner-btn">GET STARTED</button>
+        </div>
+    </div>
+
+    <section id="testimonials">
+        <div class="testimonials-header">
+            <h2>What Our Clients Say About Our Ayurvedic Hair Oil</h2>
+        </div>
+        <div class="testimonials-slider-wrapper">
+            <div class="testimonials-slider">
+                <!-- Slide 1 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Bavita Gowda</h3>
+                    <p>
+                        I've been using this hair oil for the past few months, and the results
+                        are amazing. My hair feels healthier, shinier, and more manageable than
+                        ever before. Highly recommend it to anyone looking for a reliable
+                        solution for beautiful, nourished hair.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 2 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Nagbhushan G</h3>
+                    <p>
+                        After struggling with dull and damaged hair, I decided to give this
+                        hair oil a try, and I'm glad I did. The results are incredible within
+                        weeks of regular use. I'm thrilled with the positive changes in my
+                        hair health. It's a blessing for my hair.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 3 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>New User</h3>
+                    <p>
+                        This product has transformed my hair completely. Highly recommended!
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 4 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Priya K.</h3>
+                    <p>
+                        This Ayurvedic hair oil is exactly what I needed. It nourishes my hair
+                        and has helped with dryness. Highly recommend it!
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 5 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Aman Verma</h3>
+                    <p>
+                        My hair is stronger and shinier than ever. Amazing product and worth
+                        every penny.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 6 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Riya Sharma</h3>
+                    <p>
+                        Absolutely love this hair oil! The natural ingredients really work, and
+                        my hair feels soft and healthy.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 7 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Priya Sharma</h3>
+                    <p>
+                        This oil has been a game-changer for me. My hair is softer, shinier, and
+                        much easier to manage now.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 8 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Rahul Verma</h3>
+                    <p>
+                        I was skeptical at first, but this product truly works. My hair feels
+                        nourished and has stopped falling.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 9 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Ananya Gupta</h3>
+                    <p>
+                        My hair has grown thicker and longer since I started using this. Highly
+                        recommend it to everyone.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 10 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Vivek Singh</h3>
+                    <p>
+                        I love how this oil smells and feels on my scalp. It's soothing and has
+                        improved my hair texture.
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+    
+                <!-- Slide 11 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Meera Nair</h3>
+                    <p>
+                        After using this for a few weeks, I noticed less breakage and my hair is
+                        so much healthier now.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 12 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Siddharth Joshi</h3>
+                    <p>
+                        Excellent product! My hair feels rejuvenated, and the dryness is completely
+                        gone.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 13 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Aisha Khan</h3>
+                    <p>
+                        This is my favorite hair oil now! It has reduced dandruff and made my
+                        hair more manageable.
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+    
+                <!-- Slide 14 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Ravi Kumar</h3>
+                    <p>
+                        My hair has never felt this good. It looks shinier and feels so soft
+                        after regular use.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 15 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Sneha Reddy</h3>
+                    <p>
+                        My hair fall has reduced drastically, and the quality of my hair has
+                        improved significantly.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 16 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Arjun Desai</h3>
+                    <p>
+                        This product works wonders! My hair feels stronger and more voluminous
+                        now.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 17 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Simran Kaur</h3>
+                    <p>
+                        I saw visible changes within a week of using this oil. My hair feels
+                        more hydrated and nourished.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 18 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Akash Patel</h3>
+                    <p>
+                        Great product! My scalp feels less dry, and my hair looks fuller than
+                        before.
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+    
+                <!-- Slide 19 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Neha Gupta</h3>
+                    <p>
+                        After using it for a month, I can say my hair feels nourished and
+                        moisturized. The texture has greatly improved.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 20 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Vikram Yadav</h3>
+                    <p>
+                        I love this hair oil. It has helped reduce hair fall and improved my
+                        hair's overall strength.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 21 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Shreya Singh</h3>
+                    <p>
+                        It worked wonders for my hair, which was previously very dry. Now it’s
+                        soft, shiny, and looks great.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 22 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Rohit Sharma</h3>
+                    <p>
+                        Amazing product! I have noticed significant changes in my hair texture
+                        and health. Definitely recommend it.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 23 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Tanvi Deshmukh</h3>
+                    <p>
+                        My hair feels much softer after regular use, and it has a natural shine
+                        that I never had before.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 24 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Pradeep Rai</h3>
+                    <p>
+                        I’ve been using this for a month, and the results are noticeable. My
+                        hair feels thicker and healthier.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 25 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Sonia Mehta</h3>
+                    <p>
+                        Great value for money. My hair is less frizzy and feels smoother after
+                        using this oil regularly.
+                    </p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+    
+                <!-- Slide 26 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Kiran Yadav</h3>
+                    <p>
+                        This hair oil has improved my hair’s texture significantly. It’s no longer
+                        as dry and brittle as before.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 27 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Deepa Narayan</h3>
+                    <p>
+                        I'm really happy with this hair oil. It's helped with hair fall and
+                        dandruff, and my scalp feels healthy.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+                <!-- Slide 28 -->
+                <div class="testimonial-card">
+                    <div class="avatar"></div>
+                    <h3>Alok Kumar</h3>
+                    <p>
+                        This oil has helped improve my hair quality a lot. The texture has
+                        become smoother, and it’s a lot shinier.
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+    
+            </div>
+        </div>
+        <!-- Slider Navigation Buttons -->
+        <div class="slider-buttons">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+    </section>
+            
+  <!-- Footer -->
+    <footer class="custom-footer">
+        <div class="footer-content">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Navuedha</h3>
+                <p>Discover the power of Navuedha Ayurvedic Hair Oil. Our 100% natural formula is the perfect solution for all your hair problems.</p>
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Get in Touch with Us</h3>
+                <p>📞 6360563194</p>
+                <p>✉️ Navuedhaherbals@gmail.com</p>
+                <p>📍 123 Herbal Lane, Wellness City</p>
+            </div>
+    
+            <!-- Callback Form Section -->
+            <div class="footer-section">
+                <h3>Get Callback</h3>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone" required>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Promo Banner -->
+        <div class="promo-banner">
+            <h4>© All Rights Reserved 2024 | Powered by Ace Lancing</h4>
+        </div>
+    
+   
+    <script src="script.js"></script> 
+</body>
+</html>

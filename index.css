@@ -1,0 +1,807 @@
+General Styles
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+   
+}
+
+/* Navbar Styles */
+.navbar {
+    font-size: 16px;
+    
+}
+    
+.nav-toggle{
+    display: none;
+}
+/* Promo Bar */
+.promo-bar {
+    background-color: #008cba; /* Background color */
+    color: white; /* Text color */
+    text-align: center; /* Horizontally center text */
+    height: 30px; /* Set promo bar height */
+    font-size: 15px; /* Text size */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    padding: 0; /* Remove padding to match height */
+    margin: 0; /* Remove default margins */
+}
+
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    align-items: center; /* Vertically align all children */
+    justify-content: space-between; /* Space out logo, menu, and button */
+    background-color: #f8f8f8;
+    padding: 0 20px; /* Adjust padding */
+    height: 70px; /* Container height */
+}
+
+/* Logo */
+.logo {
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Vertically center the logo */
+    justify-content: center; /* Horizontally center the logo */
+    height: 100%; /* Make logo container fill the full height */
+}
+
+.logo img {
+    max-height: 55px; /* Maximum height of the logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
+
+/* Menu Styles */
+.menu {
+    display: flex;
+    gap: 20px; /* Space between links */
+    align-items: center; /* Align vertically with the logo */
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+    line-height: 30px; /* Align text vertically with the navbar */
+}
+
+.menu a:hover {
+    color: #008cba;
+}
+
+/* WhatsApp Button */
+.contact-button .whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    padding: 5px 15px; /* Adjust padding for smaller navbar */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    line-height: 20px; /* Center button text */
+}
+
+.contact-button .whatsapp-btn:hover {
+    background-color: #1DA954;
+}
+
+/* Image Slider Section */
+.image-slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 500px; /* Fixed height for banners */
+    overflow: hidden;
+}
+
+.image-slider .slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.image-slider .slide.active {
+    display: block;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure banners fill the space proportionally */
+}
+
+.image-slider .prev,
+.image-slider .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.image-slider .prev {
+    left: 10px;
+}
+
+.image-slider .next {
+    right: 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        margin: 5px 10px;
+    }
+
+    .video-slider .slide iframe {
+        height: 300px;
+    }
+}
+
+/* Navuedha Section Styles */
+.Navuedha-section {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+}
+
+.Navuedha-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Navuedha-section .left-section,
+.Navuedha-section .right-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Navuedha-section .stages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.Navuedha-section .stages img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.Navuedha-section .satisfied h3 {
+    color: #28a745;
+    font-size: 36px;
+}
+
+.Navuedha-section .right-section h1 {
+    color: #007bff;
+}
+
+.Navuedha-section ul li {
+    margin: 10px 0;
+    color: #28a745;
+}
+/* Small Slider Section */
+.small-slider-container {
+    text-align: center;
+    margin: 30px auto;
+    width: 100%; /* Adjust the width of the slider */
+    position: relative;
+}
+
+/* Container Styles */
+.small-slider-container {
+    text-align: center;
+    margin: 30px auto;
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+}
+
+.small-slider-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Slider Wrapper */
+.small-slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+/* Slider and Slides */
+.small-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.small-slide {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.small-slide img {
+    width: 30%; /* Fit 3 images per slide */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Buttons */
+.small-prev,
+.small-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.small-prev {
+    left: 10px;
+}
+
+.small-next {
+    right: 10px;
+}
+
+.small-prev:hover,
+.small-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Reduced height of the banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 30px; /* Added gap between banner and footer */
+}
+
+/* PNG Image */
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the full container */
+    z-index: 1; /* Keeps the image in the background */
+}
+
+/* Content in the Banner (Text and Button) */
+.banner-content {
+    position: relative;
+    z-index: 2; /* Ensure it's above the PNG image */
+    text-align: center;
+    justify-content: top;
+    color: rgb(3, 2, 2); /* Text color */
+}
+
+/* Heading Styles */
+.banner-content h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Button Styles */
+.banner-btn {
+    padding: 10px 20px;
+    background-color: #f08080; /* Button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.banner-btn:hover {
+    background-color: #fa8072; /* Darker button color on hover */
+}
+
+/* Footer Section */
+.custom-footer {
+    background-color: #f1f1f1;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+/* Small Banner Image Styles */
+.banner-img {
+    height: 250px;
+    width: 100%;
+}
+
+/* Form Styling */
+#review-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #review-form input,
+  #review-form textarea,
+  #review-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #review-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #review-form button:hover {
+    background-color: #0056b3;
+  }
+  
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+#testimonials {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonials-header h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.testimonials-slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.testimonials-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 0 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    box-sizing: border-box;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.testimonial-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.testimonial-card p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.testimonial-card .stars {
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+.testimonial-card .avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+/* Slider Navigation Buttons */
+.slider-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slider-buttons button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.slider-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonials-slider-wrapper {
+        padding: 0 20px;
+    }
+
+    .testimonial-card {
+        width: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-header h2 {
+        font-size: 1.8em;
+    }
+
+    .testimonial-card {
+        width: 200px;
+    }
+}
+
+/* Scroll Bar Styles (for extra-long sliders) */
+.testimonials-slider {
+    flex-wrap: nowrap;
+}
+
+.testimonials-slider-wrapper::-webkit-scrollbar {
+    height: 10px;
+}
+
+.testimonials-slider-wrapper::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.testimonials-slider-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Make the slider container scrollable horizontally */
+.testimonials-slider-wrapper {
+    overflow-x: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+
+  
+/* Footer Styles */
+.custom-footer {
+    background-color: #008cba;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    height: 320px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding: 20px 0;
+    gap: 100px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 100px;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-section button:hover {
+    background-color: #218838;
+}
+
+/* Promo Banner */
+.promo-banner {
+    background-color: #77c043;
+    color: white; /* Text color */
+    text-align: center; /* Horizontally center text */
+    height: 30px; /* Set promo bar height */
+    font-size: 15px; /* Text size */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    padding: 0; /* Remove padding to match height */
+    margin: 0; /* Remove default margins */
+}
+
+/* Footer Buttons */
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10              px;
+}
+
+.footer-buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.call-now {
+    background-color: #008cba;
+}
+
+.whatsapp {
+    background-color: #da8a13;
+}
+
+.footer-buttons a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-buttons {
+        flex-direction: column;
+    }
+
+    .footer-buttons a {
+        margin-bottom: 10px;
+    }
+}
+
+/* Banner Section in Right Section */
+.banner-section {
+    margin-top: 10px; /* Add some spacing above the banner */
+    text-align: center; /* Center the banner */
+}
+
+.banner-section img {
+    max-width: 100%; /* Ensure the banner doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0%; /* Add rounded corners for aesthetics */
+    max-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Breakpoints */
+/* Mobile Devices (Small Screens) */
+@media (max-width: 480px) {
+    /* Navbar Responsive Design */
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo img {
+        max-height: 40px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .contact-button {
+        margin-top: 10px;
+    }
+
+    /* Image Slider */
+    .image-slider {
+        height: 250px;
+    }
+
+    /* Navuedha Section */
+    .Navuedha-section .container {
+        flex-direction: column;
+    }
+
+    .Navuedha-section .stages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Navuedha-section .left-section,
+    .Navuedha-section .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Small Slider */
+    .small-slider-container {
+        width: 90%;
+    }
+
+    .small-slide img {
+        width: 100%; /* Full width for mobile */
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    /* Footer */
+    .custom-footer {
+        height: auto;
+    }
+
+    .footer-content {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .footer-section {
+        padding: 10px;
+    }
+
+    .footer-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Banner */
+    .banner {
+        height: 200px;
+    }
+
+    .banner-content h1 {
+        font-size: 18px;
+    }
+}
+
+/* Tablet Devices (Medium Screens) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .nav-container {
+        padding: 10px 15px;
+        height: auto;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .Navuedha-section .stages {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .small-slider-container {
+        width: 80%;
+    }
+
+    .small-slide img {
+        width: 45%; /* Two images per slide */
+    }
+
+    .footer-content {
+        gap: 50px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+}
+
+/* Large Tablets and Small Desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-container {
+        padding: 0 30px;
+    }
+
+    .Navuedha-section .container {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .small-slider-container {
+        width: 75%;
+    }
+}
+
+/* High-Resolution Screens */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
