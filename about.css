@@ -252,3 +252,144 @@ body {
 .whatsapp {
     background-color: #da8a13;
 }
+
+
+/* Responsive Media Queries */
+
+/* Mobile Devices (up to 600px) */
+@media screen and (max-width: 600px) {
+    /* Promo Bar and Navigation */
+    .promo-bar, .promo-banner {
+        font-size: 12px;
+        height: 25px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        max-height: 40px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .contact-button .whatsapp-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* About and Ingredients Sections */
+    .about-container, .ingredients-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-image, .ingredients-image,
+    .about-text, .ingredients-text {
+        max-width: 100%;
+        flex: none;
+    }
+
+    .about-text h1, .ingredients-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p, .ingredients-text p,
+    .about-text ul, .ingredients-text ul {
+        font-size: 0.95rem;
+    }
+
+    .section-image {
+        max-width: 100%;
+    }
+
+    /* Footer */
+    .custom-footer {
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .footer-section {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-buttons a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+/* Tablet Devices (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .nav-container {
+        padding: 0 10px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .about-container, .ingredients-container {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .footer-content {
+        gap: 50px;
+        padding: 15px;
+    }
+}
+
+/* Large Screens (Additional Refinements) */
+@media screen and (min-width: 1025px) {
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .about-container, .ingredients-container {
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+}
+
+/* Global Responsive Adjustments */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+}

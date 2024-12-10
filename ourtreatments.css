@@ -286,6 +286,155 @@ body {
     margin-bottom: 0;
 }
 
+/* Responsive Media Queries */
+
+/* Mobile Devices (up to 600px) */
+@media screen and (max-width: 600px) {
+    /* Promo Bar and Navigation */
+    .promo-bar, .promo-banner {
+        font-size: 12px;
+        height: 25px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        max-height: 40px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .contact-button .whatsapp-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Footer */
+    .custom-footer {
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .footer-section {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-buttons a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* Gallery Responsiveness */
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 15px;
+    }
+
+    .gallery-heading {
+        font-size: 1.5rem;
+    }
+
+    .gallery-intro {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    .gallery-img {
+        height: 250px; /* Slightly taller images on mobile */
+    }
+
+    .gallery-caption h3 {
+        font-size: 1rem;
+    }
+
+    .gallery-caption p {
+        font-size: 0.8rem;
+    }
+
+    .gallery-description {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+}
+
+/* Tablet Devices (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .nav-container {
+        padding: 0 10px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .footer-content {
+        gap: 50px;
+        padding: 15px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+    }
+
+    .gallery-img {
+        height: 220px;
+    }
+}
+
+/* Large Screens (Additional Refinements) */
+@media screen and (min-width: 1025px) {
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .gallery-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* Global Responsive Adjustments */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+}
 
 
 
