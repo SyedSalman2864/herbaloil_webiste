@@ -1,12 +1,14 @@
 General Styles
 body {
-    margin: 0;
+    margin: 0px;
+    /* background-color: #008cba; */
     font-family: Arial, sans-serif;
    
 }
 
 /* Navbar Styles */
 .navbar {
+    width: 100%;
     font-size: 16px;
     
 }
@@ -19,13 +21,13 @@ body {
     background-color: #008cba; /* Background color */
     color: white; /* Text color */
     text-align: center; /* Horizontally center text */
-    height: 30px; /* Set promo bar height */
     font-size: 15px; /* Text size */
     display: flex; /* Use flexbox for centering */
     align-items: center; /* Vertically center the text */
     justify-content: center; /* Horizontally center the text */
-    padding: 0; /* Remove padding to match height */
-    margin: 0; /* Remove default margins */
+    padding: 10px 0px; /* Remove padding to match height */
+    margin: 0px; /* Remove default margins */
+    /* background-color: red; */
 }
 
 
@@ -478,7 +480,9 @@ body {
     }
 }
 
+
 @media (max-width: 480px) {
+ 
     .testimonials-header h2 {
         font-size: 1.8em;
     }
@@ -579,7 +583,7 @@ body {
     background-color: #77c043;
     color: white; /* Text color */
     text-align: center; /* Horizontally center text */
-    height: 30px; /* Set promo bar height */
+    height: 30px; 
     font-size: 15px; /* Text size */
     display: flex; /* Use flexbox for centering */
     align-items: center; /* Vertically center the text */
@@ -661,13 +665,22 @@ body {
 
 
 /* Responsive Breakpoints */
-/* Mobile Devices (Small Screens) */
-@media (max-width: 480px) {
+@media (max-width: 991px) {
     /* Navbar Responsive Design */
     .nav-container {
         flex-direction: column;
         height: auto;
         padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        display: block; 
+        font-size: 24px; 
+        cursor: pointer;
+        order: 2;
     }
 
     .logo img {
@@ -675,6 +688,7 @@ body {
     }
 
     .menu {
+        display: none;
         flex-direction: column;
         width: 100%;
         align-items: center;
@@ -683,15 +697,22 @@ body {
     }
 
     .contact-button {
+        display: flex;
+        align-items: center;
         margin-top: 10px;
     }
 
-    /* Image Slider */
+    .contact-button .whatsapp-btn {
+        display: block; 
+        margin-right: 10px; 
+        order: 1;
+    }
+
+    /* Image Slider and Section Layouts */
     .image-slider {
         height: 250px;
     }
 
-    /* Navuedha Section */
     .Navuedha-section .container {
         flex-direction: column;
     }
@@ -706,13 +727,13 @@ body {
         padding: 10px;
     }
 
-    /* Small Slider */
+    /* Sliders */
     .small-slider-container {
         width: 90%;
     }
 
     .small-slide img {
-        width: 100%; /* Full width for mobile */
+        width: 100%;
     }
 
     /* Testimonials */
@@ -748,42 +769,17 @@ body {
     .banner-content h1 {
         font-size: 18px;
     }
-}
 
-/* Tablet Devices (Medium Screens) */
-@media (min-width: 481px) and (max-width: 768px) {
-    .nav-container {
-        padding: 10px 15px;
-        height: auto;
-    }
-
-    .menu {
-        gap: 15px;
-    }
-
-    .Navuedha-section .stages {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .small-slider-container {
-        width: 80%;
-    }
-
-    .small-slide img {
-        width: 45%; /* Two images per slide */
-    }
-
-    .footer-content {
-        gap: 50px;
-    }
-
-    .banner {
-        height: 300px;
+    /* Additional Sections */
+    .about-section,
+    .contact-section {
+        text-align: center; 
+        padding: 10px;
     }
 }
 
-/* Large Tablets and Small Desktops */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* Tablet and Small Desktop Adjustments */
+@media (min-width: 992px) and (max-width: 1440px) {
     .nav-container {
         padding: 0 30px;
     }
@@ -793,8 +789,20 @@ body {
         margin: 0 auto;
     }
 
+    .Navuedha-section .stages {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .small-slider-container {
         width: 75%;
+    }
+
+    .small-slide img {
+        width: 45%;
+    }
+
+    .banner {
+        height: 300px;
     }
 }
 

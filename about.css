@@ -13,12 +13,12 @@ body {
     background-color: #008cba; /* Background color */
     color: white; /* Text color */
     text-align: center; /* Horizontally center text */
-    height: 30px; /* Set promo bar height */
+    height: 30px;
     font-size: 15px; /* Text size */
     display: flex; /* Use flexbox for centering */
     align-items: center; /* Vertically center the text */
     justify-content: center; /* Horizontally center the text */
-    padding: 0; /* Remove padding to match height */
+    padding: 10px 0; /* Remove padding to match height */
     margin: 0; /* Remove default margins */
 }
 
@@ -386,9 +386,7 @@ body {
 }
 
 /* Global Responsive Adjustments */
-* {
-    box-sizing: border-box;
-}
+
 
 body {
     min-width: 320px;
