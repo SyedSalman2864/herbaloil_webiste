@@ -668,18 +668,26 @@ body {
 @media (max-width: 991px) {
     /* Navbar Responsive Design */
     .nav-container {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
         padding: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
     }
 
     .nav-toggle {
         display: block; 
         font-size: 24px; 
         cursor: pointer;
+        order: 3;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         order: 2;
     }
 
@@ -694,18 +702,16 @@ body {
         align-items: center;
         gap: 10px;
         margin-top: 10px;
+        order: 4;
     }
 
     .contact-button {
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
+        order: 3;
+        margin-right: 10px;
     }
 
     .contact-button .whatsapp-btn {
-        display: block; 
-        margin-right: 10px; 
-        order: 1;
+        display: inline-block; 
     }
 
     /* Image Slider and Section Layouts */
